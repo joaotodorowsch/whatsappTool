@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+    align-content: center;
+}
+
+p {
+    color: black; /* Texto preto */
+    margin: 15px 0; /* Espaçamento entre os parágrafos */
+    font-family: 'Roboto';
+    border-bottom: solid;
+  }
+
+  .botao-enviar {
+    background: linear-gradient(45deg, #00c4ff, #006eff); /* Gradiente azul */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+
+  /* Efeito de hover */
+  .botao-enviar:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ligeiramente */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Aumenta a sombra */
+    background: linear-gradient(45deg, #006eff, #00c4ff); /* Inverte o gradiente */
+  }
+
+  /* Efeito de "ripple" ao clicar */
+  .botao-enviar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    pointer-events: none;
+  }
+
+  /* Animação do clique */
+  .botao-enviar:active::before {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0s;
+  }

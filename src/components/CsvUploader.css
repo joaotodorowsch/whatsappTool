@@ -1,0 +1,57 @@
+#container_CSV{
+    padding: 10px;
+    }
+
+       /* Estilos para o botão de enviar arquivo */
+input[type="file"] {
+        display: none; /* Esconde o input padrão */
+      }
+  
+      /* Estilo para o rótulo que serve como botão */
+      .custom-file-upload {
+        display: inline-block;
+        cursor: pointer;
+        background: linear-gradient(45deg, #00c4ff, #006eff); /* Mesma aparência do botão */
+        color: white;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 50px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+  
+      /* Efeito de hover no rótulo do botão */
+      .custom-file-upload:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        background: linear-gradient(45deg, #006eff, #00c4ff); /* Inverte o gradiente */
+      }
+  
+      /* Efeito de "ripple" no rótulo do botão */
+      .custom-file-upload::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.5s ease;
+        pointer-events: none;
+      }
+  
+      /* Animação do clique no rótulo do botão */
+      .custom-file-upload:active::before {
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 0s;
+      }
+.text-csv {
+    margin: 5px 0;
+}

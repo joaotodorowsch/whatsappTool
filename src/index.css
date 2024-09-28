@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: white;
+}
+
+.container2 {
+  background-color: #FDF6E3; /* Fundo branco na div */
+  margin-bottom: 5px;
+  border: 2px solid; /* Largura da borda reduzida para 2px */
+  border-image: linear-gradient(to right, #00c4ff, #006eff);
+  border-image-slice: 1; /* Aplica o degradê em toda a borda */
+  border-radius: 10px; /* Bordas arredondadas */
+  width: 50%;
+}
+
+

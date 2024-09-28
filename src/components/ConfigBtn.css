@@ -1,0 +1,19 @@
+.config-button {
+    display: flex;
+    align-items: center;
+    background-color: #FDF6E3; /* Fundo branco */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 16px;
+}
+
+.config-button:hover {
+    background-color: #e7f0ff; /* Fundo azul claro ao passar o mouse */
+    border-color: #0056b3; /* Borda azul escura ao passar o mouse */
+}
+
+.svg-icon {
+    margin-right: 8px; /* Espaçamento entre o SVG e o texto */
+}

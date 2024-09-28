@@ -1,0 +1,91 @@
+.botao-estilizado {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    background-color: white; /* Fundo do botão */
+    color: black; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-align: center; /* Alinhamento do texto */
+    cursor: pointer; /* Cursor de ponteiro */
+    border-radius: 12px; /* Bordas arredondadas */
+    border: 2px solid lightblue; /* Borda azul clara */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+  }
+  
+  /* Muda a cor da borda ao passar o mouse */
+  .botao-estilizado:hover {
+    border-color: darkblue; /* Borda escurece ao passar o mouse */
+  }
+
+  .textarea-estilizada {
+    width: 100%; /* Largura completa */
+    height: 100px; /* Altura fixa */
+    padding: 15px; /* Espaçamento interno */
+    margin: 10px 0; /* Margem em cima e embaixo */
+    background-color: white; /* Fundo branco */
+    color: black; /* Cor do texto */
+    border: 2px solid lightblue; /* Borda azul clara */
+    border-radius: 12px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    resize: none; /* Desabilitar redimensionamento */
+    font-weight: bold; /* Negrito para destacar o texto */
+    transition: border-color 0.3s; /* Transição suave para borda */
+  }
+  
+  /* Muda a cor da borda ao passar o mouse */
+  .textarea-estilizada:hover {
+    border-color: darkblue; /* Borda escurece ao passar o mouse */
+  }
+
+  .textarea-estilizada {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.botao-texto {
+    display: inline-block;
+    padding: 10px 15px; /* Espaçamento interno */
+    margin-right: 10px; /* Espaçamento entre os "botões" */
+    background-color: lightblue; /* Cor de fundo */
+    border: 1px solid lightblue; /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.botao-texto:hover {
+    background-color: deepskyblue; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+.mensagem-display {
+    border: 1px solid #ccc; /* Borda do campo de mensagem */
+    padding: 10px;
+    min-height: 50px; /* Altura mínima */
+    margin-top: 10px;
+    display: flex; /* Usando flexbox para layout */
+    flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+.botao-texto {
+    background-color: white; /* Fundo branco */
+    border: 1px solid lightblue; /* Borda azul clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 5px 10px; /* Espaçamento interno */
+    margin: 2px; /* Margem entre botões */
+    cursor: pointer; /* Mão ao passar o mouse */
+    user-select: none; /* Impede a seleção de texto */
+}
+.placeholder-botao {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #f0f0f0; /* cor de fundo do botão */
+    border: 1px solid #90caf9; /* borda azul clara */
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none; /* impede que o texto do botão seja selecionado */
+}
